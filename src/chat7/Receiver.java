@@ -22,7 +22,7 @@ public class Receiver extends Thread{
 			System.out.println("예외>Receiver>생성자: "+ e);
 		}
 	}
-	
+
 	/*
 	run()메소드에서는 서버가 보내는 Echo메세지를
 	지속적으로 읽어오고, 예외발생시 while루프를 탈출한다.

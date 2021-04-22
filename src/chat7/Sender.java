@@ -1,6 +1,7 @@
 package chat7;
 
 import java.io.PrintWriter;
+
 import java.io.UnsupportedEncodingException;
 import java.net.Socket;
 import java.net.URLEncoder;
@@ -46,15 +47,10 @@ public class Sender extends Thread{
 					}
 				}
 				catch(UnsupportedEncodingException e1) {}
-				catch(Exception e) {
-					System.out.println("예외>Sender>run1:" + e);
-				}
 			}
-			out.close();
-			socket.close();
 		}
 		catch(Exception e) {
-			System.out.println("예외>Sender>run2:" + e);
+			e.printStackTrace();
 		}
 	}
 }
